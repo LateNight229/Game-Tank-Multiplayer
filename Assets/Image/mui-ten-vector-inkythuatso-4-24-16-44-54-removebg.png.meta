@@ -1,0 +1,1675 @@
+fileFormatVersion: 2
+guid: 4b5b962e61d2d7244b975c125254167b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d284465ebce9beb4a803e652a1f1ff19
+      internalID: -891920822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5263a39e50c3e24c88cf2b2d8550e57
+      internalID: 1695049245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4106c8ab90926a479003af4464492e9
+      internalID: 637693710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57bd36bf348db14ea04b6f86c1ca79b
+      internalID: -1079642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5a08eb993506c4a90ca74c209dce64
+      internalID: -1950273963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc644994a23a0174c9dfad8676b1babc
+      internalID: -1798733678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1ee0669f02551448ba964166153948
+      internalID: 970385505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f2d1865345b1b4b9bb998b300fe142
+      internalID: -1800499819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a69d7c7bce204943a51d47dbff4c917
+      internalID: -1751157599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_9
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 349.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d86e0e5caec2984d90fdfcaa3ab4bfc
+      internalID: 649998304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fae3060bc9e9774498bc16822144d67
+      internalID: 77780521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_11
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad20f76ba9b0ae4f999ddf2071bf1f4
+      internalID: 1687681873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_12
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2225cc6bf325b9744be2c634dcf3a3af
+      internalID: 1864880188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_13
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb53d53d18f94b647b69f25b58104870
+      internalID: -1059370852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449409d5b6fdd81428278d049869af75
+      internalID: 1013724500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d73b122b80b81e4481d789b4af43a5a
+      internalID: -541283693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57130f204a7d1364599be0e38a50df9c
+      internalID: -619357092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_17
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3423a8e72ce0e0a4b911d2551d913123
+      internalID: -2122021533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_18
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb6fefd84d13b244bccc37da6b61222
+      internalID: 1038848834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_19
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 291.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6286f53482c31a0489635edaf046aaf1
+      internalID: -758714479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d0c491c76e6f34fb659a001b2472bf
+      internalID: 1658607377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e204518f20f5b6489dfd68cadcc4266
+      internalID: 1945342072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_22
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a51a611b9f19224083c98f9cc02cdbd
+      internalID: 1703009222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_23
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db96d2e2a3bed0458f791afc408956b
+      internalID: 2054321322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_24
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e9816e7ade3184cb50ceb10bfa5873
+      internalID: -1703578290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_25
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa03a199c7c361428e90db6b79b0605
+      internalID: -268624543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_26
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6450c71eafa429d458cb4821f2576b3a
+      internalID: -320981694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_27
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a328d52f142ec245ad6106156b288f6
+      internalID: 886476636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_28
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114b08ddad64804449e444dde21a2e03
+      internalID: -65299155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_29
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 233.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5f37c9916d90945b61397a9e38e592
+      internalID: -1509981041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63839d93fbc4a39489223ca174ddf378
+      internalID: 185924566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_31
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c0917acfe6a1b4ba5dc9786287dd8e
+      internalID: 1543928004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_32
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6569e6f9f2faef4db392488f0c7b9be
+      internalID: -386977336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_33
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a22914c4bf08424ba3e432ecaca0560
+      internalID: 1459537504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_34
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d748e50cdb045d4c8acf93952051a47
+      internalID: -652770321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_35
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c455edbd7e76c1c4e85641bb9459f898
+      internalID: -1329697804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_36
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9600fdc86bbc9294f9e51a32c458a916
+      internalID: 1882460276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_37
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaf38009728d8449b5701b4b1298915
+      internalID: 1190436067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_38
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7d0d7f94503cb4caa96b035b19432f
+      internalID: 457704182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_39
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 175.7143
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9e983365ad9dd4798f7842c3b58e01
+      internalID: 215626356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea68c5a407335314ba88b61c141e9274
+      internalID: -473292864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_41
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbc39d7f6b00434ba38e3d0c983f1c0
+      internalID: 1434517256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_42
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf43139300196a43b06891e19a70201
+      internalID: 1904663707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_43
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa5fca671c1ccb4286e974fa90a89bb
+      internalID: -781802088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_44
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3790b66d72fc75459bca552bc1e5d86
+      internalID: 1688913731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_45
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60d2f9b967dc1f42b0031c7d69d90a4
+      internalID: -900663776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_46
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b4678b1da9c9948bef151c2b7f3d58
+      internalID: 137673553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_47
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0322ab56aa36c34ca38e77d3dad209a
+      internalID: -1899109254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_48
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7063109d1c657b4093207be36c379d2
+      internalID: 1248591488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_49
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 117.71429
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4dd52e8023fb040b25671a524fdbb5
+      internalID: -1112771542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d75d5df543bdf469bf4726b20dcd58
+      internalID: 41180715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_51
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ddc96689b245141bc1af662d7e95b8
+      internalID: -1777871527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_52
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7cb6f23a5f43f45aed0d15451783ad
+      internalID: -715248044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_53
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08d5aeeb239b794485c9c777c951931
+      internalID: 1339458007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_54
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeadb30967f06074e87c4c2d035179fd
+      internalID: -1500816462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_55
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16acb2e98a966a64ea9f5ee6f7cc5888
+      internalID: 755433372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_56
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f5e6ca67ca7aa4d8e54426d0e3e7ed
+      internalID: -2010495735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_57
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fd76abc15747a4fb0d38307fec61ca
+      internalID: -1635164156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_58
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bcdc1fedd237f438994bc5d7a265f8
+      internalID: 1181294935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_59
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 59.714287
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602bb23231041c04b85c723518631229
+      internalID: -797468533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5886969951350f448a33b44a688a37ee
+      internalID: -1630997126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_61
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149984280ee7cfe4698ade16f612d6da
+      internalID: 1262873148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_62
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8b9a33f357bcc479c55599f75c2bd1
+      internalID: 388130623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_63
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e92d06c12461f47a2e7eaa82e26383
+      internalID: 449163940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_64
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d2f80774d12564fb77b567d3d718b2
+      internalID: 526957387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_65
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb60b6d9db55a344daaa797ed7f604b2
+      internalID: -1141894217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_66
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90904fccb0d630f40961881379da942d
+      internalID: -934115991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_67
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7f5325c540cee4daf675faed1c6d32
+      internalID: -1513368384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_68
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c683dbace4d699540b5fcac266c6203a
+      internalID: 971267988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_69
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1.7142868
+        width: 61.2
+        height: 58.285713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f877bab2a6fd5b428b0b7de0448b446
+      internalID: 1892534658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ba7ef128f4cad924b8c6f9d719c7a881
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_0: -891920822
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_1: 1695049245
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_10: 77780521
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_11: 1687681873
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_12: 1864880188
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_13: -1059370852
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_14: 1013724500
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_15: -541283693
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_16: -619357092
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_17: -2122021533
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_18: 1038848834
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_19: -758714479
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_2: 637693710
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_20: 1658607377
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_21: 1945342072
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_22: 1703009222
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_23: 2054321322
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_24: -1703578290
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_25: -268624543
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_26: -320981694
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_27: 886476636
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_28: -65299155
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_29: -1509981041
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_3: -1079642
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_30: 185924566
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_31: 1543928004
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_32: -386977336
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_33: 1459537504
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_34: -652770321
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_35: -1329697804
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_36: 1882460276
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_37: 1190436067
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_38: 457704182
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_39: 215626356
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_4: -1950273963
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_40: -473292864
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_41: 1434517256
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_42: 1904663707
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_43: -781802088
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_44: 1688913731
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_45: -900663776
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_46: 137673553
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_47: -1899109254
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_48: 1248591488
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_49: -1112771542
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_5: -1798733678
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_50: 41180715
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_51: -1777871527
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_52: -715248044
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_53: 1339458007
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_54: -1500816462
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_55: 755433372
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_56: -2010495735
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_57: -1635164156
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_58: 1181294935
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_59: -797468533
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_6: 970385505
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_60: -1630997126
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_61: 1262873148
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_62: 388130623
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_63: 449163940
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_64: 526957387
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_65: -1141894217
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_66: -934115991
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_67: -1513368384
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_68: 971267988
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_69: 1892534658
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_7: -1800499819
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_8: -1751157599
+      mui-ten-vector-inkythuatso-4-24-16-44-54-removebg_9: 649998304
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
