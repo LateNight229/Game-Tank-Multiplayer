@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletsBlue: []
   bulletsRed: []
-  poolSize: 5
+  poolSize: 10
   prefabBulletBlue: {fileID: 7090710131271465290, guid: 6f4d29cfd8b2b4744bcabc5437eeb536, type: 3}
   prefabBulletRed: {fileID: 8362787410197010642, guid: 08338119ba0c943449889713a3e36f21, type: 3}
 --- !u!114 &-170989495505588017

@@ -10,6 +10,6 @@ public class DeadExplosionPool : ExplosionPool
     private void Awake()
     {
         Instance = this;
-        timeDisableExplosion = 2f;
+        timeWaitExplosionFin = 2f;
     }
 }

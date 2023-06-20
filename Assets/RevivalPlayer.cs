@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RevivalPlayer : MonoBehaviourPunCallbacks
@@ -13,12 +14,15 @@ public class RevivalPlayer : MonoBehaviourPunCallbacks
     GameObject turretObj;
 
     private int positionIndex;
-    private Transform positionSpawn; 
-    private bool isReviving = false;
-    private float revivalTimer = 0f;
+    private Transform positionSpawn;
+
     private void Awake()
     {
         instance = this;
+    }
+    private void Start()
+    {
+       
     }
     public void ResetPlayerPosition(int OwnerActorNumber , string color)
     {   
@@ -32,25 +36,18 @@ public class RevivalPlayer : MonoBehaviourPunCallbacks
                 turretObj = UpdatePropertiesPlayer.Instance.GetTurretObj(player);
                 if(tankObj != null && turretObj != null)
                 {
-                    //SetActivePlayer(false);
-                    DisableTank();
-                    //RevivePlayer();
-                    //Invoke("RevivePlayer", timeRevival);
-                    //StartCoroutine(WaitAndRevival(timeRevival, OwnerActorNumber,color));
-                    RePositionPlayer(OwnerActorNumber, color);
+                    SetActivePlayer(false);
+                    RePositionPlayer(OwnerActorNumber, color);  
+                    Invoke("RevivePlayer", 3f);
+                    
                 }
             }
         }
     }
-    private IEnumerator WaitAndRevival(float time,int OwnerActorNumber,string color)
-    {
-        yield return new WaitForSeconds(time);
-        RePositionPlayer(OwnerActorNumber, color);
-    }
-    private void DisableTank()
-    {
-        tankObj.transform.position = new Vector3(tankObj.transform.position.x, -100f, tankObj.transform.position.z);
-    }
+    //private void DisableTank()
+    //{
+    //    tankObj.transform.position = new Vector3(tankObj.transform.position.x, -100f, tankObj.transform.position.z);
+    //}
     private void SetActivePlayer(bool active)
     {
         if (active == true)
@@ -68,6 +65,7 @@ public class RevivalPlayer : MonoBehaviourPunCallbacks
     private void RevivePlayer()
     {
         SetActivePlayer(true);
+        ListRevivalPlayer.Instance.AddActive(instance);
     }
 
     private void RePositionPlayer(int OwnerActorNumber, string color)
@@ -78,4 +76,5 @@ public class RevivalPlayer : MonoBehaviourPunCallbacks
         tankObj.transform.rotation = positionSpawn.rotation;
         turretObj.transform.position =positionSpawn.position;
     }
+  
 }

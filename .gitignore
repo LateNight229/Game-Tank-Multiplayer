@@ -11,5 +11,8 @@ Desktop.ini
 /Recordings
 /Temp
 /UserSettings
+/PhotonMain
+/Logs
+/.vs
 
 *.blend

@@ -1,4 +1,4 @@
-using Photon.Pun;
+﻿using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,47 +9,73 @@ public class ExplosionPool : MonoBehaviourPunCallbacks
 
     public GameObject explosionPrefab;
     public int poolSize = 10;
-    protected  float timeDisableExplosion = 0.5f;
+    protected float timeWaitExplosionFin = 2f;
 
-    private GameObject[] explosionPool;
-    private int currentExplosion = 0;
+    private List<GameObject> activeExplosions = new List<GameObject>();
+    private List<GameObject> inactiveExplosions = new List<GameObject>();
 
     private void Awake()
     {
         Instance = this;
     }
+
     protected virtual void Start()
-    {   
-        explosionPool = new GameObject[poolSize];
+    {
         for (int i = 0; i < poolSize; i++)
         {
-            explosionPool[i] = Instantiate(explosionPrefab, Vector3.zero, Quaternion.identity);
-            explosionPool[i].SetActive(false);
+            GameObject explosion = Instantiate(explosionPrefab, Vector3.zero, Quaternion.identity);
+            explosion.SetActive(false);
+            inactiveExplosions.Add(explosion);
         }
     }
 
-    public virtual void  SpawnExplosion(Vector3 position)
+    public virtual void SpawnExplosion(Vector3 position)
     {
-        
-        explosionPool[currentExplosion].transform.position = position;
-        explosionPool[currentExplosion].SetActive(true); 
-        currentExplosion = (currentExplosion + 1) % poolSize;
-        StartCoroutine(SpawnExplosion(timeDisableExplosion));
+        GameObject explosion;
 
+        if (inactiveExplosions.Count > 0)
+        {
+            explosion = inactiveExplosions[0];
+            inactiveExplosions.RemoveAt(0);
+        }
+        else
+        {
+            explosion = Instantiate(explosionPrefab, Vector3.zero, Quaternion.identity);
+        }
+
+        explosion.transform.position = position;
+        explosion.SetActive(true);
+        activeExplosions.Add(explosion);
+
+        StartCoroutine(WaitExplosionFinish(explosion, timeWaitExplosionFin));
     }
 
-    private IEnumerator SpawnExplosion(float time)
+    private IEnumerator WaitExplosionFinish(GameObject explosion, float time)
     {
         yield return new WaitForSeconds(time);
-        DisableExplosion();
+        DisableExplosion(explosion);
     }
-    public virtual void DisableExplosion()
-    {   
-        if(currentExplosion == 0)
+
+    public virtual void DisableExplosion(GameObject explosion)
+    {
+        if (activeExplosions.Contains(explosion))
         {
-            explosionPool[currentExplosion + poolSize - 1].SetActive(false);
-        }else
-        explosionPool[currentExplosion -1 ].SetActive(false);
-       
+            if (!explosion.GetComponent<ParticleSystem>().isPlaying)
+            {
+                explosion.SetActive(false);
+                activeExplosions.Remove(explosion);
+                inactiveExplosions.Add(explosion);
+            }
+            else
+            {
+                // Xóa explosion chưa hoàn thành khỏi danh sách
+                activeExplosions.Remove(explosion);
+
+                // Tạo một explosion mới và thêm vào danh sách inactiveExplosions
+                GameObject newExplosion = Instantiate(explosionPrefab, Vector3.zero, Quaternion.identity);
+                newExplosion.SetActive(false);
+                inactiveExplosions.Add(newExplosion);
+            }
+        }
     }
 }

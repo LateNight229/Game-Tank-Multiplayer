@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: -771477581064837141}
   - component: {fileID: 4662038361773232272}
   - component: {fileID: 8826208428451854265}
-  - component: {fileID: -2653882207663490637}
   m_Layer: 6
   m_Name: Bullet_Blue
   m_TagString: Untagged
@@ -173,20 +172,6 @@ CapsuleCollider:
   m_Height: 0.3266312
   m_Direction: 2
   m_Center: {x: 0.007945836, y: 0.00050899386, z: 0.12326487}
---- !u!114 &-2653882207663490637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7090710131271465290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55038724bafed9f488c183b7405bd8ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorBulletBlue: blue
-  colorBulletRed: red
 --- !u!1001 &6836265725832282282
 PrefabInstance:
   m_ObjectHideFlags: 0

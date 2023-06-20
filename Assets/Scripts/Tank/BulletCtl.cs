@@ -8,7 +8,7 @@ public class BulletCtl : MonoBehaviour
 {
     public GameObject bullet;
     public float maxDistance;
-    [SerializeField] public float bulletRate = 1f;
+    /*[SerializeField]*/ private float bulletRate = 2f;
     [SerializeField] private float DamageAmount = 50f;
 
     private float bulletTimer;
@@ -53,7 +53,10 @@ public class BulletCtl : MonoBehaviour
     private void  Update()
     {
         bulletTimer -= Time.deltaTime;
-        if(bulletTimer <= 0f) ReturnToPool();
+        if (bulletTimer <= 0f) 
+        {
+            ReturnToPool(); SpawnExplosion(transform.position); 
+        }
     }
     void ReturnToPool()
     {   

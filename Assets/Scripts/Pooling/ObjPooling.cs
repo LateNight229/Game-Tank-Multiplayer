@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
@@ -45,11 +45,14 @@ public class ObjPooling : MonoBehaviourPunCallbacks
                 bullet.transform.rotation = rotation;
                 return bullet;
             }
+            
         }
-        return null;
+        GameObject newBullet = Instantiate(blue ? prefabBulletBlue : prefabBulletRed, position, rotation);
+        return newBullet;
     }
     public void ReturnBulletToPool(GameObject bullet)
     {
-        bullet.SetActive(false);
+         bullet.SetActive(false);
+
     }
 }

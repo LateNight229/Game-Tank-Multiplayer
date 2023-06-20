@@ -103,13 +103,13 @@ public class Health : MonoBehaviourPunCallbacks
     private void Die()
     {
         ScoreUI();
-        pv.RPC("MasterRevival", RpcTarget.MasterClient);
+        //pv.RPC("MasterRevival", RpcTarget.MasterClient);
         EventDie();
     }
     void EventDie()
     {
         DeadExplosionPool.Instance.SpawnExplosion(transform.position);
-        //RevivalPlayer.instance.ResetPlayerPosition(pv.Owner.ActorNumber, color);
+        ListRevivalPlayer.Instance.GetRevival(pv.Owner.ActorNumber, color);
         CurrentHealth = MaxHealth;
     }
     [PunRPC]
@@ -121,7 +121,7 @@ public class Health : MonoBehaviourPunCallbacks
     [PunRPC]
     public void RevivalPlayerRPC()
     {
-        RevivalPlayer.instance.ResetPlayerPosition(pv.Owner.ActorNumber, color);
+        ListRevivalPlayer.Instance.GetRevival(pv.Owner.ActorNumber, color);
     }
     void ScoreUI()
     {

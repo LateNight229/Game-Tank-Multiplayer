@@ -264,6 +264,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 30
-  fireRate: 0.5
   firePoint: {fileID: 655309316195077630}
   team: 
