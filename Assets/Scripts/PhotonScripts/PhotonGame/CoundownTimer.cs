@@ -6,45 +6,45 @@ using UnityEngine;
 public class CoundownTimer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
-    [SerializeField] private float totalTime = 20f; 
+    protected float totalTime = 20f;
 
-    private float currentTime;
-    private bool isCountingDown = true;
+    protected float currentTime;
+    protected bool isCountingDown = true;
+    protected int timeFinish = 0;
 
-    private void Start()
+    protected virtual void Start()
     {
         currentTime = totalTime;
-        UpdateTimerText();
         StartCountdown();
+        UpdateTimerText();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (isCountingDown && currentTime > 1)
         {
             currentTime -= Time.deltaTime;
             UpdateTimerText();
         }
-        if (currentTime == 0)
+        if (currentTime <= timeFinish)
         {
             isCountingDown = false;
             HandleCountdownFinished();
         }
     }
 
-    private void UpdateTimerText()
+    protected virtual void UpdateTimerText()
     {
         int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
 
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
-    private void HandleCountdownFinished()
+    protected virtual void HandleCountdownFinished()
     {
-        // Thực hiện hành động khi đếm ngược kết thúc
-        
     }
-    private void StartCountdown()
+    protected virtual void StartCountdown()
     {
+
     }
 }

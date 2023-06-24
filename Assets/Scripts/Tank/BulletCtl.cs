@@ -36,7 +36,7 @@ public class BulletCtl : MonoBehaviour
 
             Health tankHealth = other.GetComponent<Health>();
             HealthPv = tankHealth.photonView;
-            Debug.Log("HealthPv = " + HealthPv.Owner.ActorNumber );
+            //Debug.Log("HealthPv = " + HealthPv.Owner.ActorNumber );
             if (tankHealth != null )
             {
                 if (PhotonNetwork.IsMasterClient)

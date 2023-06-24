@@ -10,7 +10,7 @@ public class ListRevivalPlayer : MonoBehaviour
     {
         Instance = this;
     }
-    private RevivalPlayer revival;
+    //private RevivalPlayer revival;
 
     public List<RevivalPlayer> activeRevivalPlayer = new List<RevivalPlayer>();
 
@@ -22,8 +22,7 @@ public class ListRevivalPlayer : MonoBehaviour
     {
         if(activeRevivalPlayer.Count > 0)
         {
-            revival = activeRevivalPlayer[0];
-            //activeRevivalPlayer.RemoveAt(0);
+            RevivalPlayer revival = activeRevivalPlayer[0];
             activeRevivalPlayer.Remove(revival);
             revival.ResetPlayerPosition(OwnerActorNumber, color);
         }

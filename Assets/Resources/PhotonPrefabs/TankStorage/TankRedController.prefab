@@ -606,7 +606,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.474
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0
+  m_text: '100
 
 '
   m_isRightToLeft: 0
@@ -1504,24 +1504,9 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4bd122cb58a5d8645afd8bf406f31e3f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
---- !u!4 &7322868115136742424 stripped
+--- !u!4 &3688875093011427407 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6901132729350649733, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
-  m_PrefabInstance: {fileID: 4207965586376291229}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2927316592892937078 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1367502784231600363, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
-  m_PrefabInstance: {fileID: 4207965586376291229}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2221441399308209674 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2644060796637298071, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
-  m_PrefabInstance: {fileID: 4207965586376291229}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &3966625773525309583 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 966580088011516690, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 672221882971161554, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
   m_PrefabInstance: {fileID: 4207965586376291229}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2472515873050889697 stripped
@@ -1529,14 +1514,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1744465846403628668, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
   m_PrefabInstance: {fileID: 4207965586376291229}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3688875093011427407 stripped
+--- !u!4 &2927316592892937078 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 672221882971161554, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1367502784231600363, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
+  m_PrefabInstance: {fileID: 4207965586376291229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7322868115136742424 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6901132729350649733, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
   m_PrefabInstance: {fileID: 4207965586376291229}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &3054898738491557886 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1153093373755847779, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
+  m_PrefabInstance: {fileID: 4207965586376291229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3966625773525309583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 966580088011516690, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
+  m_PrefabInstance: {fileID: 4207965586376291229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2221441399308209674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2644060796637298071, guid: a30540c41d7d5ed4281d72b4916afb5e, type: 3}
   m_PrefabInstance: {fileID: 4207965586376291229}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &883631511
@@ -1569,6 +1569,18 @@ CapsuleCollider:
   m_Height: 2.6642036
   m_Direction: 2
   m_Center: {x: 0.00000035762787, y: 0.15274751, z: -0.038929224}
+--- !u!114 &-6685198708823237826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054898738491557886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87d52b62658f904496a70718c787952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-5084606729451026716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1653,6 +1665,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRevival: 3
+  StartCD:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2816843842245573597
 MonoBehaviour:
   m_ObjectHideFlags: 0

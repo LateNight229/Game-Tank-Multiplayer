@@ -103,25 +103,28 @@ public class Health : MonoBehaviourPunCallbacks
     private void Die()
     {
         ScoreUI();
-        //pv.RPC("MasterRevival", RpcTarget.MasterClient);
-        EventDie();
+        //EventDies();
+        StartCoroutine(DieCoroutine());
     }
-    void EventDie()
+    void EventDies()
     {
+        ListControlPannelRevival.instance.checkAndChooseEventDie(true, pv.ViewID);
         DeadExplosionPool.Instance.SpawnExplosion(transform.position);
         ListRevivalPlayer.Instance.GetRevival(pv.Owner.ActorNumber, color);
         CurrentHealth = MaxHealth;
+        Invoke("RevivalCoroutine", 2f);
     }
-    [PunRPC]
-    public void MasterRevival()
+    private IEnumerator DieCoroutine()
     {
-        pv.RPC("RevivalPlayerRPC", RpcTarget.All);
-       // RevivalPlayer.instance.ResetPlayerPosition(pv.Owner.ActorNumber, color);
-    }
-    [PunRPC]
-    public void RevivalPlayerRPC()
-    {
+        ListControlPannelRevival.instance.checkAndChooseEventDie(true, pv.ViewID);
+        yield return new WaitForSeconds(0.1f);
         ListRevivalPlayer.Instance.GetRevival(pv.Owner.ActorNumber, color);
+        CurrentHealth = MaxHealth;
+        Invoke("RevivalCoroutine", 2f);
+    }
+    private void RevivalCoroutine()
+    {
+        UpdateUIHealth(CurrentHealth, pv.ViewID, 1f);
     }
     void ScoreUI()
     {
@@ -155,12 +158,5 @@ public class Health : MonoBehaviourPunCallbacks
         MaxHealth *= 2f;
         yield return new WaitForSeconds(duration);
         MaxHealth = originalMaxHealth;
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            RevivalPlayer.instance.ResetPlayerPosition(pv.Owner.ActorNumber, color);
-        }
     }
 }

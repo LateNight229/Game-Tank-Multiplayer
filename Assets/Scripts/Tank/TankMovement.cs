@@ -32,7 +32,7 @@ public class TankMovement : MonoBehaviour
         if (PV.IsMine)
         {
             IsLocalPlayer = true;
-            Debug.Log("IslocalPlayer = true");
+            //Debug.Log("IslocalPlayer = true");
         }
 
     }
