@@ -1,16 +1,18 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class CoundownTimer : MonoBehaviour
+public class CoundownTimer : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI timerText;
-    protected float totalTime = 20f;
+    protected float totalTime = 3f;
 
     protected float currentTime;
     protected bool isCountingDown = true;
-    protected int timeFinish = 0;
+    protected int timeFinish = 1;
+    private bool isLoadedScene;
 
     protected virtual void Start()
     {
@@ -26,11 +28,12 @@ public class CoundownTimer : MonoBehaviour
             currentTime -= Time.deltaTime;
             UpdateTimerText();
         }
-        if (currentTime <= timeFinish)
+        if (currentTime <= timeFinish && isLoadedScene == false)
         {
             isCountingDown = false;
             HandleCountdownFinished();
         }
+        Debug.Log("Current Time, isCTD : " + currentTime.ToString() + " - " + isCountingDown.ToString());
     }
 
     protected virtual void UpdateTimerText()
@@ -42,6 +45,13 @@ public class CoundownTimer : MonoBehaviour
     }
     protected virtual void HandleCountdownFinished()
     {
+        isLoadedScene = true;
+        LoadSceneEndPlay();
+    }
+    //[PunRPC]
+    public void LoadSceneEndPlay()
+    {
+        PhotonNetwork.LoadLevel(2);
     }
     protected virtual void StartCountdown()
     {

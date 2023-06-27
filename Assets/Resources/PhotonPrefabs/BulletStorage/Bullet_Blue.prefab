@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090710131271465290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.811}
+  m_LocalPosition: {x: -0.018, y: 0, z: 0.811}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 3997968569339975213}
@@ -156,7 +156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7090710131271465290}
   maxDistance: 0
-  bulletRate: 1
   DamageAmount: 50
 --- !u!136 &8826208428451854265
 CapsuleCollider:
@@ -168,10 +167,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.033768833
-  m_Height: 0.3266312
+  m_Radius: 0.1
+  m_Height: 0.3367947
   m_Direction: 2
-  m_Center: {x: 0.007945836, y: 0.00050899386, z: 0.12326487}
+  m_Center: {x: 0, y: 0, z: 0.14}
 --- !u!1001 &6836265725832282282
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class Shooting : MonoBehaviourPunCallbacks
     }
 
     [SerializeField] private float bulletSpeed = 30f;
-    /*[SerializeField]*/ private float fireRate = 0.1f;
+    /*[SerializeField]*/ private float fireRate = 0.5f;
     public GameObject firePoint;
 
     private PhotonView pv;

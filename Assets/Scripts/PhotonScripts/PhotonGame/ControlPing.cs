@@ -27,7 +27,7 @@ public class ControlPing : MonoBehaviourPunCallbacks
         }
 
         int  ping = PhotonNetwork.GetPing();
-        UiGameManager.Instance.PingAndFPS(ping, fps);
+        //UiGameManager.Instance.PingAndFPS(ping, fps);
 
     }
 

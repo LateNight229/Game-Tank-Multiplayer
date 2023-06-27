@@ -29,16 +29,6 @@ public class TankMovement : MonoBehaviour
     void Awake()
     {
         PV = GetComponent<PhotonView>();
-        if (PV.IsMine)
-        {
-            IsLocalPlayer = true;
-            //Debug.Log("IslocalPlayer = true");
-        }
-
-    }
-    private void Start()
-    {
-       
     }
     void FixedUpdate()
     {

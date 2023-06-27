@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class UiGameManager : Singleton<UiGameManager>
 {
-    public TextMeshProUGUI pingText;
-    public TextMeshProUGUI fpsText;
+    //public TextMeshProUGUI pingText;
+    //public TextMeshProUGUI fpsText;
     public TextMeshProUGUI ScoreBlue;
     public TextMeshProUGUI ScoreRed;
 
     private int scoreBlue = 0;
     private int scoreRed = 0;
 
-    public void PingAndFPS(int ping, float fps)
-    {
-        pingText.text = "Ping: " +  ping.ToString() + " ms";
-        fpsText.text = "FPS: " +  fps;
-    }
+    //public void PingAndFPS(int ping, float fps)
+    //{
+    //    pingText.text = "Ping: " +  ping.ToString() + " ms";
+    //    fpsText.text = "FPS: " +  fps;
+    //}
     public void ScorebarUI(string color)
     {   
         //Debug.Log("Tank " + color + " UI die");

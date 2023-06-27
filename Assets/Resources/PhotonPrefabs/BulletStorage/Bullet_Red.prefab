@@ -156,7 +156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 8362787410197010642}
   maxDistance: 0
-  bulletRate: 1
   DamageAmount: 50
 --- !u!136 &-8449923481523928457
 CapsuleCollider:
@@ -168,10 +167,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.033768833
-  m_Height: 0.3266312
+  m_Radius: 0.1
+  m_Height: 0.39952025
   m_Direction: 2
-  m_Center: {x: 0.007945836, y: 0.00050899386, z: 0.12326487}
+  m_Center: {x: 0, y: 0, z: 0.14}
 --- !u!1001 &3838930818615090533
 PrefabInstance:
   m_ObjectHideFlags: 0

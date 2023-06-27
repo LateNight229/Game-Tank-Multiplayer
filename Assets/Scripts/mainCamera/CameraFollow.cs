@@ -26,10 +26,10 @@ public class CameraFollow : MonoBehaviour
     void SetPositionCamera()
     {
         if (colorTeam == "blue")
-            camera.transform.position = transform.position - new Vector3(0, -26.5f, 14.59f);
+            camera.transform.position = transform.position - new Vector3(0, -29.5f, /*14.59f*/0f);
         else
         {
-            camera.transform.position = transform.position - new Vector3(0, -26.5f, -14.59f);
+            camera.transform.position = transform.position - new Vector3(0, -29.5f, /*-14.59f*/0f);
         }
     }
    

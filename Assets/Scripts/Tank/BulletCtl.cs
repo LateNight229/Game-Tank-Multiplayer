@@ -8,7 +8,7 @@ public class BulletCtl : MonoBehaviour
 {
     public GameObject bullet;
     public float maxDistance;
-    /*[SerializeField]*/ private float bulletRate = 2f;
+    /*[SerializeField]*/ private float bulletRate = 0.4f;
     [SerializeField] private float DamageAmount = 50f;
 
     private float bulletTimer;
