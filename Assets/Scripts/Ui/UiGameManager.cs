@@ -1,18 +1,24 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UiGameManager : Singleton<UiGameManager>
+public class UiGameManager : MonoBehaviourPunCallbacks
 {
+    public static UiGameManager Instance;    
     //public TextMeshProUGUI pingText;
     //public TextMeshProUGUI fpsText;
-    public TextMeshProUGUI ScoreBlue;
-    public TextMeshProUGUI ScoreRed;
+    public TextMeshProUGUI ScoreBlueText;
+    public TextMeshProUGUI ScoreRedText;
 
     private int scoreBlue = 0;
     private int scoreRed = 0;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
     //public void PingAndFPS(int ping, float fps)
     //{
     //    pingText.text = "Ping: " +  ping.ToString() + " ms";
@@ -24,15 +30,19 @@ public class UiGameManager : Singleton<UiGameManager>
         if (color == "blue")
         {
             scoreRed++;
-            ScoreRed.text = scoreRed.ToString();
+            ScoreRedText.text = scoreRed.ToString();
             //Debug.Log("team Red + 1 Ponit!");
         }
         else if (color == "red")
         {
             scoreBlue++;
-            ScoreBlue.text = scoreBlue.ToString();
+            ScoreBlueText.text = scoreBlue.ToString();
             //Debug.Log("Team blue + 1 Point");
         }
         else return;
+    }
+    public void GetScore(ref int blue,ref int red)
+    {
+        blue = scoreBlue; red = scoreRed;
     }
 }

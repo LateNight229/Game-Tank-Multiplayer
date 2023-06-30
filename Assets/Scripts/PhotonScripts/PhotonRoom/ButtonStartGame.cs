@@ -16,7 +16,7 @@ public class ButtonStartGame : MonoBehaviourPunCallbacks
         {
             if (player.CustomProperties[readyValue].ToString() == "False")
             {
-                Debug.Log("Player: " + player.NickName + "not ready");
+                //Debug.Log("Player: " + player.NickName + "not ready");
                 return false;
             }
         }   
@@ -27,11 +27,12 @@ public class ButtonStartGame : MonoBehaviourPunCallbacks
         if (!IsRoomMaster())
         {
             Debug.Log("ban khong phai chu phong");
+            UiMenuManager.instance.ShowMessage("You are not the room owner !");
             return;
         }
         if (!AreAllPlayerReady())
         {
-            Debug.Log("chua du nguoi chan san sang de bat dau tro choi");
+            UiMenuManager.instance.ShowMessage("There are players who are not ready !");
             return;
         }
 

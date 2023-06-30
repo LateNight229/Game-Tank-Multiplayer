@@ -14,7 +14,8 @@ public class ControlNameTextPlayer : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
-        mainCamera = playerStart.Instance.Camera;
+        //mainCamera = playerStart.Instance.GetCamera();
+        mainCamera = Camera.main;
     }
     private void Start()
     {   

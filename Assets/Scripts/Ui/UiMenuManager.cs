@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UiManager : MonoBehaviour
+public class UiMenuManager : MonoBehaviour
 {   
-    public static UiManager instance;
+    public static UiMenuManager instance;
 
     private void Awake()
     {
@@ -19,7 +19,7 @@ public class UiManager : MonoBehaviour
     [Header("List Text Team") ]
     [SerializeField] private List<TextMeshProUGUI> listTeamBlue;
     [SerializeField] private List<TextMeshProUGUI> listTeamRed;
-    [SerializeField] private TextMeshProUGUI debugSwitchTeam;
+    [SerializeField] private TextMeshProUGUI SendMessageText;
 
     [Header("List Toogle Ready")]
     [SerializeField] private List<GameObject> listToogleReadyBlue;
@@ -36,6 +36,16 @@ public class UiManager : MonoBehaviour
     public GameObject LoginPanel;
 
     private const string EMPTY_STRING = "";
+    private int timeDeleteMessage = 3;
+    public void ShowMessage(string message)
+    {
+        SendMessageText.text = message;
+        Invoke("DeletMessage", timeDeleteMessage);
+    }
+    void DeletMessage()
+    {
+        SendMessageText.text = "";
+    }
     public void UiAddTeam(List<string> teamBlue, List<string> teamRed)
     {
         UiAddTeamBlue(teamBlue);
@@ -43,6 +53,18 @@ public class UiManager : MonoBehaviour
         UiToogleReadyBlue(teamBlue);
         UiToogleReadyRed(teamRed);
         
+    }
+    public void GetListTeamBlue(ref List<TextMeshProUGUI> teamBlue, ref List<TextMeshProUGUI> teamRed)
+    {
+        for (int i = 0; i < listTeamBlue.Count; i++)
+        {
+            //teamBlue.Add(listTeamBlue[i]);
+            teamBlue[i].text = listTeamBlue[i].text;
+        }
+        for (int i = 0; i < listTeamRed.Count; i++)
+        {
+            teamRed[i].text = listTeamRed[i].text;
+        }
     }
     public void UiAddTeamBlue(List<string> teamBlue)
     {
@@ -97,7 +119,7 @@ public class UiManager : MonoBehaviour
         }
     }
     public void SetMarkReady(string playerName, bool isReady)
-    {   
+    {     
         if(playerName == PhotonNetwork.LocalPlayer.NickName)
         {
             if (isReady == true) { textReady.text = "UnReady";  } else textReady.text = "Ready";

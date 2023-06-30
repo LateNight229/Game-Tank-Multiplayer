@@ -35,6 +35,17 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
         }
         return colorTeam;
     }
+    public String GetColorLocal(ref string colorTeam)
+    {
+        foreach (Photon.Realtime.Player player in PhotonNetwork.PlayerList)
+        {
+            if (player.IsLocal)
+            {
+                colorTeam = player.CustomProperties[teamValue].ToString() == "team Blue" ? "blue" : "red";
+            }
+        }
+        return colorTeam;
+    }
     public string GetNamePlayer(ref string NamePlayer)
     {   
         foreach(Photon.Realtime.Player player in PhotonNetwork.PlayerList)

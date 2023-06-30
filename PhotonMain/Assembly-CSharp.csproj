@@ -62,10 +62,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Scripts\Tank\FolowPlayer.cs" />
-    <Compile Include="Assets\Scripts\RendererPlayer.cs" />
     <Compile Include="Assets\Scripts\Tank\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Vfx\VfxDustTrail.cs" />
-    <Compile Include="Assets\Scripts\PhotonScripts\Ui\UiGameManager.cs" />
+    <Compile Include="Assets\Scripts\Ui\UiGameManager.cs" />
     <Compile Include="Assets\Scripts\Explosion\CFX_AutoRotate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -73,7 +72,7 @@
     <Compile Include="Assets\Scripts\Tank\Shooting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Pooling\ObjPooling.cs" />
-    <Compile Include="Assets\Scripts\ControlPannelRevival.cs" />
+    <Compile Include="Assets\Scripts\Tank\ControlPannelRevival.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\CoundownTimer.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\UpdatePropertiesPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
@@ -86,8 +85,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Tank\Health.cs" />
     <Compile Include="Assets\Scripts\HealthBarHandler.cs" />
+    <Compile Include="Assets\Scripts\Ui\UiMenuManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\ListControlPannelRevival.cs" />
+    <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\ListControlPannelRevival.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\Explosion\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\mainCamera\CameraFollow.cs" />
@@ -102,10 +102,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Scripts\SingletonGeneric\Singleton.cs" />
-    <Compile Include="Assets\Scripts\CountdownRevival.cs" />
+    <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\CountdownRevival.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Scripts\Ui\UiResultManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\Scripts\RevivalPlayer.cs" />
+    <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\RevivalPlayer.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\PhotonTranform.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\PlayerManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -113,13 +114,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\ControlPing.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Scripts\ListRevivalPlayer.cs" />
+    <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\ListRevivalPlayer.cs" />
     <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\Scripts\PhotonScripts\Ui\UiManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Scripts\playerStart.cs" />
+    <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\playerStart.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonRoom\RoomManager.cs" />
     <Compile Include="Assets\Scripts\Pooling\PoolingManager.cs" />
@@ -134,6 +134,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Vfx\VfxBullet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\IteamRecoverHealth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

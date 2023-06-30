@@ -8,7 +8,6 @@ public class ControlPannelRevival : MonoBehaviourPunCallbacks
     public static ControlPannelRevival instance;    
 
     private PhotonView pv;
-    private PhotonView viewID;
     private bool isRevivalDie;
     private void Awake()
     {   
@@ -31,7 +30,7 @@ public class ControlPannelRevival : MonoBehaviourPunCallbacks
         if(isRevivalDie == true )
         {
             CountdownRevival.Instance.StartCountDown();
-            Debug.Log("Start Coundown !");
+            //Debug.Log("Start Coundown !");
             isRevivalDie=false;
         }
     }

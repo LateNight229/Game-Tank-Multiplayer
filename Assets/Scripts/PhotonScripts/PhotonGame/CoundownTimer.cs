@@ -7,17 +7,23 @@ using UnityEngine;
 public class CoundownTimer : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI timerText;
-    protected float totalTime = 3f;
+    public GameObject itemHealth;
+    
 
+    protected float totalTime = 30f;
     protected float currentTime;
     protected bool isCountingDown = true;
     protected int timeFinish = 1;
-    private bool isLoadedScene;
 
-    protected virtual void Start()
+    private bool isLoadedScene;
+    private PhotonView pv;
+    private void Awake()
     {
+        pv = GetComponent<PhotonView>();
+    }
+    protected virtual void Start()
+    {   
         currentTime = totalTime;
-        StartCountdown();
         UpdateTimerText();
     }
 
@@ -33,7 +39,10 @@ public class CoundownTimer : MonoBehaviourPunCallbacks
             isCountingDown = false;
             HandleCountdownFinished();
         }
-        Debug.Log("Current Time, isCTD : " + currentTime.ToString() + " - " + isCountingDown.ToString());
+        if(isCountingDown && currentTime <= totalTime / 3)
+        {
+            
+        }
     }
 
     protected virtual void UpdateTimerText()
@@ -46,15 +55,16 @@ public class CoundownTimer : MonoBehaviourPunCallbacks
     protected virtual void HandleCountdownFinished()
     {
         isLoadedScene = true;
-        LoadSceneEndPlay();
+        pv.RPC("LoadSceneEndPlayMC", RpcTarget.MasterClient);
     }
-    //[PunRPC]
+    [PunRPC]
+    public void LoadSceneEndPlayMC()
+    {
+        pv.RPC("LoadSceneEndPlay", RpcTarget.All);
+    }
+    [PunRPC]
     public void LoadSceneEndPlay()
     {
         PhotonNetwork.LoadLevel(2);
-    }
-    protected virtual void StartCountdown()
-    {
-
     }
 }

@@ -5,32 +5,25 @@ using System.Drawing;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
-{
+{   
+    public static CameraFollow instance ;
     public Vector3 offset;
     private Camera camera;
     private PhotonView pv;
-    private string colorTeam;
-
     private void Awake()
     {
+        instance = this;
         pv = GetComponent<PhotonView>();
         camera = Camera.main;
-
     }
     private void Start()
-    {
+    {  
         if (!pv.IsMine) return;
-        UpdatePropertiesPlayer.Instance.GetColor(ref colorTeam, pv.Owner.ActorNumber);
         SetPositionCamera();
     }
     void SetPositionCamera()
     {
-        if (colorTeam == "blue")
-            camera.transform.position = transform.position - new Vector3(0, -29.5f, /*14.59f*/0f);
-        else
-        {
-            camera.transform.position = transform.position - new Vector3(0, -29.5f, /*-14.59f*/0f);
-        }
+        camera.transform.position = transform.position - new Vector3(0, -29.5f, 0f);
     }
    
     void LateUpdate()
@@ -39,7 +32,9 @@ public class CameraFollow : MonoBehaviour
         if (camera!= null)
         {
             SetPositionCamera();
+          
         }
+       
     }
-   
+
 }

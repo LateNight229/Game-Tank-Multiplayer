@@ -65,11 +65,17 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         Application.Quit();
 #endif
     }
+    
     public override void OnLeftLobby()
     {
-        UiManager.instance.LobbyPanel.SetActive(false);
-        UiManager.instance.LoginPanel.SetActive(true);
-        Debug.Log("Leaved LobbySuccess");
+        UiMenuManager.instance.LobbyPanel.SetActive(false);
+        UiMenuManager.instance.LoginPanel.SetActive(true);
+        PhotonNetwork.Disconnect();
+        Debug.Log("Leaved Lobby Success");
+    }
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        UiMenuManager.instance.ShowMessage("Not Connected to server yet !");
     }
     public override void OnConnectedToMaster()
     {
@@ -80,8 +86,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         Debug.Log("Joined lobby!");
-        UiManager.instance.LoginPanel.SetActive(false);
-        UiManager.instance.LobbyPanel.SetActive(true);
+        UiMenuManager.instance.LoginPanel.SetActive(false);
+        UiMenuManager.instance.LobbyPanel.SetActive(true);
     }
 
 }

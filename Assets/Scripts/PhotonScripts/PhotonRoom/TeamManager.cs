@@ -153,17 +153,18 @@ public class TeamManager : MonoBehaviourPunCallbacks
     }
     [PunRPC]
     public void CheckReady(string name, bool ready)
-    {
-        UiManager.instance.SetMarkReady(name,ready);
+    {   
+        
+        UiMenuManager.instance.SetMarkReady(name,ready);
     }
     private void UpdateUiLocal()
     {
-        UiManager.instance.UiAddTeam(teamBlue, teamRed);
+        UiMenuManager.instance.UiAddTeam(teamBlue, teamRed);
     }
     [PunRPC]
     public void UpdateUiAll()
     {
-        UiManager.instance.UiAddTeam(teamBlue, teamRed);
+        UiMenuManager.instance.UiAddTeam(teamBlue, teamRed);
     }
 
     public void ClearALlBeforeOut()
@@ -188,10 +189,10 @@ public class TeamManager : MonoBehaviourPunCallbacks
     }
     public override void OnLeftRoom()
     {
-        UiManager.instance.openRoomManager.SetActive(false);
-        UiManager.instance.LobbyPanel.SetActive(false);
-        UiManager.instance.LoginPanel.SetActive(true);
-        Debug.Log("leave Room Success");
+        UiMenuManager.instance.openRoomManager.SetActive(false);
+        UiMenuManager.instance.LobbyPanel.SetActive(false);
+        UiMenuManager.instance.LoginPanel.SetActive(true);
+       // Debug.Log("leave Room Success");
     }
 
     [PunRPC]

@@ -49,6 +49,18 @@ public class Health : MonoBehaviourPunCallbacks
         pv.RPC("TakeDamageAndSync", RpcTarget.All, amount, viewHealthID);
     }
     [PunRPC]
+    public void MasterClientRecoverHealth(float amount, int viewHealthID)
+    {
+        pv.RPC("RecoverHealthAndSync", RpcTarget.All, amount, viewHealthID);
+    }
+    [PunRPC]
+    public void RecoverHealthAndSync(float amount, int viewHealthID)
+    {
+        CurrentHealth = amount;
+        float filledAmount = CurrentHealth / MaxHealth;
+        UpdateUIHealth(currentHealth, viewHealthID, filledAmount);
+    }
+    [PunRPC]
     public void TakeDamageAndSync(float amount, int viewHealthID)
     {
         CurrentHealth -= amount;
@@ -103,16 +115,7 @@ public class Health : MonoBehaviourPunCallbacks
     private void Die()
     {
         ScoreUI();
-        //EventDies();
         StartCoroutine(DieCoroutine());
-    }
-    void EventDies()
-    {
-        ListControlPannelRevival.instance.checkAndChooseEventDie(true, pv.ViewID);
-        DeadExplosionPool.Instance.SpawnExplosion(transform.position);
-        ListRevivalPlayer.Instance.GetRevival(pv.Owner.ActorNumber, color);
-        CurrentHealth = MaxHealth;
-        Invoke("RevivalCoroutine", 2f);
     }
     private IEnumerator DieCoroutine()
     {

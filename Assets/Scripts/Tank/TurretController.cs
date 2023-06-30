@@ -53,7 +53,8 @@ public class TurretController : MonoBehaviourPunCallbacks
     void RotationFollowMouse()
     {   
         if(pause == true) { return; }
-        mainCamera = playerStart.Instance.Camera;
+        //mainCamera = playerStart.Instance.GetCamera();
+        mainCamera = Camera.main;
         Vector3 mousePos = Input.mousePosition;
         Vector3 planeNormal = Vector3.up;
         Plane plane = new Plane(planeNormal, distanceFromCamera);
