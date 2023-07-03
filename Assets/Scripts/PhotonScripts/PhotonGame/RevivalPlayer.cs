@@ -34,9 +34,9 @@ public class RevivalPlayer : MonoBehaviourPunCallbacks
         {
             if (player.ActorNumber == OwnerActorNumber)
             {   
-                tankObj = UpdatePropertiesPlayer.Instance.GetPlayerObj(player);
+                tankObj = UpdatePropertiesPlayer.Instance.GetPlayerObjByOwner(player);
                // Debug.Log("TankObj = " + tankObj.name);
-                turretObj = UpdatePropertiesPlayer.Instance.GetTurretObj(player);
+                turretObj = UpdatePropertiesPlayer.Instance.GetTurretObjByOwner(player);
                 if(tankObj != null && turretObj != null)
                 {
                     SetActivePlayer(false);
@@ -70,7 +70,7 @@ public class RevivalPlayer : MonoBehaviourPunCallbacks
 
     private void RePositionPlayer(int OwnerActorNumber, string color)
     {
-        UpdatePropertiesPlayer.Instance.GetPositionSpawn(ref positionIndex, OwnerActorNumber);
+        UpdatePropertiesPlayer.Instance.GetPositionSpawnByOwnerActorNumber(ref positionIndex, OwnerActorNumber);
         PlayerManager.instance.RepositionPlayer(positionIndex,ref positionSpawn, color);
         tankObj.transform.position = positionSpawn.position;
         tankObj.transform.rotation = positionSpawn.rotation;

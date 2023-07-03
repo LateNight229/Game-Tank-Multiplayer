@@ -156,7 +156,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 8362787410197010642}
   maxDistance: 0
-  DamageAmount: 50
+  timeAvailable: 0.6
+  _damageAmount: 10
+  maxDamage: 100
 --- !u!136 &-8449923481523928457
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -73,6 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Pooling\ObjPooling.cs" />
     <Compile Include="Assets\Scripts\Tank\ControlPannelRevival.cs" />
+    <Compile Include="Assets\IteamRecoverHealth.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\CoundownTimer.cs" />
     <Compile Include="Assets\Scripts\PhotonScripts\PhotonGame\UpdatePropertiesPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
@@ -134,7 +135,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Vfx\VfxBullet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\IteamRecoverHealth.cs" />
+    <Compile Include="Assets\ItemBuffDamage.cs" />
+    <Compile Include="Assets\ControlBuffShooting.cs" />
+    <Compile Include="Assets\Scripts\TimeItemAvailable.cs" />
+    <Compile Include="Assets\ItemCreateShield.cs" />
+    <Compile Include="Assets\ItemBuffFireRate.cs" />
+    <Compile Include="Assets\ItemBuffSpeedBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

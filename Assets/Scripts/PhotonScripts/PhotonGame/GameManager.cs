@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.Instantiate(Path.Combine(nameFile, nameFile1, namePrefab), position, rotation);
     }
-    public void ConstrucGameObj()
+    private void ConstrucGameObj()
     {
         CreateObj("PhotonPrefabs", "Manager", "PlayerManager", Vector3.zero, Quaternion.identity);
         CreateObj("PhotonPrefabs", "Manager", "PoolingManager", Vector3.zero, Quaternion.identity);

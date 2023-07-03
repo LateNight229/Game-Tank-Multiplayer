@@ -131,7 +131,7 @@ public class Health : MonoBehaviourPunCallbacks
     }
     void ScoreUI()
     {
-        UpdatePropertiesPlayer.Instance.GetColor(ref color, pv.Owner.ActorNumber);
+        UpdatePropertiesPlayer.Instance.GetColorbyOwnerActorNumber(ref color, pv.Owner.ActorNumber);
         UpdateUiScore(color);
 
     }

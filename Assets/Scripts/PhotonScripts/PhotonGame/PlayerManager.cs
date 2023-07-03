@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (pv.IsMine)
         {
-            UpdatePropertiesPlayer.Instance.GetColorAndPositionTank(ref colorTeam, ref postionIndex);
+            UpdatePropertiesPlayer.Instance.GetColorAndPositionTankLocal(ref colorTeam, ref postionIndex);
             UpdateColorTank();
             UpdateColorTurret();
             UpdatepositionSpawnTank();

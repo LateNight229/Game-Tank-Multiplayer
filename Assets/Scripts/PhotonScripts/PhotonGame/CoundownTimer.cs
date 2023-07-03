@@ -1,21 +1,26 @@
 ﻿using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 
 public class CoundownTimer : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI timerText;
-    public GameObject itemHealth;
+    public List<Transform> posItem ;
+    public List<GameObject> items ;
     
 
-    protected float totalTime = 30f;
+    protected float totalTime = 180f;
     protected float currentTime;
-    protected bool isCountingDown = true;
     protected int timeFinish = 1;
 
     private bool isLoadedScene;
+    protected bool isCountingDown = true;
+    private bool dropItem1;
+    private bool dropItem2;
+    private bool dropItem3;
     private PhotonView pv;
     private void Awake()
     {
@@ -39,12 +44,44 @@ public class CoundownTimer : MonoBehaviourPunCallbacks
             isCountingDown = false;
             HandleCountdownFinished();
         }
-        if(isCountingDown && currentTime <= totalTime / 3)
+        if (dropItem1 == false && isCountingDown && currentTime <= 150f)
         {
-            
+            dropItem1 = true;
+            Transform posDropItem = GetRandomTranform();
+            string itemName = GetRandomItemName();
+            SpawnItem(posDropItem, itemName);
+        }
+        if (dropItem2 == false && isCountingDown && currentTime <= 120f)
+        {
+            dropItem2 = true;
+            Transform posDropItem = GetRandomTranform();
+            string itemName = GetRandomItemName();
+            SpawnItem(posDropItem, itemName);
+        }
+        if (dropItem3 == false && isCountingDown && currentTime <= 90f)
+        {
+            dropItem3 = true;
+            Transform posDropItem = GetRandomTranform();
+            string itemName = GetRandomItemName();
+            SpawnItem(posDropItem, itemName);
         }
     }
+    private void SpawnItem(Transform posItem, string item)
+    {
+        PhotonNetwork.Instantiate(Path.Combine("List_Item_Runtime", item), posItem.position, posItem.rotation);
+        //PhotonNetwork.Instantiate(Path.Combine("List_Item_Runtime", "Speed"), posItem.position, posItem.rotation);
 
+    }
+    private string GetRandomItemName()
+    {
+        int randomItem = Random.Range(0, items.Count);
+        return items[randomItem].name;
+    }
+    private Transform GetRandomTranform()
+    {
+        int randomPosDropItem =Random.Range(0, posItem.Count );
+        return posItem[randomPosDropItem];
+    }
     protected virtual void UpdateTimerText()
     {
         int minutes = Mathf.FloorToInt(currentTime / 60);

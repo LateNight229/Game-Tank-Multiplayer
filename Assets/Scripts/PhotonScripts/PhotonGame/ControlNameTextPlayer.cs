@@ -36,7 +36,7 @@ public class ControlNameTextPlayer : MonoBehaviourPunCallbacks
     }
     void UpdateNamePlayer()
     {
-        UpdatePropertiesPlayer.Instance.GetNamePlayer(ref namePlayerUpdate);
+        UpdatePropertiesPlayer.Instance.GetNamePlayerLocal(ref namePlayerUpdate);
         textNamePlayer.text = namePlayerUpdate;
         pv.RPC("SynNamePlayer", RpcTarget.Others,namePlayerUpdate);
     }

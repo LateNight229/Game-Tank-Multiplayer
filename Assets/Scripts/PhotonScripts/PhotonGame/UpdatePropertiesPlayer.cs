@@ -11,7 +11,7 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
     private const string countIndex = TeamManager.COUNT_POSITION_START;
     private const string namePlayer = LobbyManager.NAME_PLAYER;
 
-    public Tuple<string,int> GetColorAndPositionTank(ref string colorTeam , ref int positionIndex)
+    public Tuple<string,int> GetColorAndPositionTankLocal(ref string colorTeam , ref int positionIndex)
     {
         foreach (Photon.Realtime.Player player in PhotonNetwork.PlayerList)
         {
@@ -24,7 +24,7 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
         }
         return new Tuple<string,int>(colorTeam, positionIndex);
     }
-    public String GetColor(ref string colorTeam, int OwnerActorNumber)
+    public String GetColorbyOwnerActorNumber(ref string colorTeam, int OwnerActorNumber)
     {
         foreach (Photon.Realtime.Player player in PhotonNetwork.PlayerList)
         {
@@ -46,7 +46,7 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
         }
         return colorTeam;
     }
-    public string GetNamePlayer(ref string NamePlayer)
+    public string GetNamePlayerLocal(ref string NamePlayer)
     {   
         foreach(Photon.Realtime.Player player in PhotonNetwork.PlayerList)
         {
@@ -59,7 +59,7 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
         }
         return null;
     }
-    public GameObject GetPlayerObj(Photon.Realtime.Player player)
+    public GameObject GetPlayerObjByOwner(Photon.Realtime.Player player)
     {
         GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject playerObject in playerObjects)
@@ -72,7 +72,20 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
         }
         return null;
     }
-    public GameObject GetTurretObj(Photon.Realtime.Player player)
+    public GameObject GetplayerObjByName(string  namePlayer)
+    {
+        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject playerObject in playerObjects)
+        {
+            PhotonView photonView = playerObject.GetComponent<PhotonView>();
+            if (photonView != null && photonView.Owner.NickName == namePlayer)
+            {
+                return playerObject;
+            }
+        }
+        return null;
+    }
+    public GameObject GetTurretObjByOwner(Photon.Realtime.Player player)
     {
         GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Turret");
         foreach (GameObject playerObject in playerObjects)
@@ -85,7 +98,7 @@ public class UpdatePropertiesPlayer : Singleton<UpdatePropertiesPlayer>
         }
         return null;
     }
-    public int GetPositionSpawn(ref int positionIndex, int OwnerActorNumber)
+    public int GetPositionSpawnByOwnerActorNumber(ref int positionIndex, int OwnerActorNumber)
     {
         foreach (Photon.Realtime.Player player in PhotonNetwork.PlayerList)
         {

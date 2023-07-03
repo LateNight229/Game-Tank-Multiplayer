@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IteamRecoverHealth : MonoBehaviour
+public class IteamRecoverHealth : TimeItemAvailable
 {
     private float healthRecoverAmount = 100f;
     private void OnTriggerEnter(Collider other)
@@ -18,6 +18,7 @@ public class IteamRecoverHealth : MonoBehaviour
                 {
                     healthPv.RPC("MasterClientRecoverHealth", RpcTarget.MasterClient, healthRecoverAmount, healthPv.ViewID);
                 }
+                isTrigger = true;
             }
         }
     }

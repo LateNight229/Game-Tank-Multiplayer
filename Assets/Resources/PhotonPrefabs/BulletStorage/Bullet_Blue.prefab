@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4707543993296261770
 Transform:
   m_ObjectHideFlags: 0
@@ -156,7 +156,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7090710131271465290}
   maxDistance: 0
-  DamageAmount: 50
+  timeAvailable: 0.6
+  _damageAmount: 10
+  maxDamage: 100
 --- !u!136 &8826208428451854265
 CapsuleCollider:
   m_ObjectHideFlags: 0
